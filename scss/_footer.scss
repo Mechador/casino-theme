@@ -1,0 +1,42 @@
+.footer {
+	background-color: $white;
+	.footer-banner {
+		margin-top: 34px;
+		padding-bottom: 35px;
+		border-bottom: 1px solid $textColor;
+	}
+	.footer-nav {
+		list-style: none;
+	}
+	.footer-list {
+		border-bottom: 1px solid $textColor;
+	}
+	.footer-list li {
+		float: left;
+		margin-top: 30px;
+		padding-bottom: 28px;
+		a {
+			color: $green;
+			font: 400 13px / 24px 'Roboto';
+		}
+	}
+	p {
+		font: 400 13px / 24px 'Roboto';
+		color: $textColor;
+		margin-top: 38px;
+		margin-bottom: 63px;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.footer {
+		.footer-list {
+			text-align: center;
+			li {
+				float: none !important;
+				padding-bottom: 10px;
+				margin-top: 10px;
+			}
+		}
+	}
+}

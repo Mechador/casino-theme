@@ -1,0 +1,105 @@
+.casino-top-banner {
+	position: relative;
+	margin-bottom: 20px;
+	figcaption {
+		position: absolute;
+		//padding-left: 47px;
+		//padding-top: 46px;
+		top: 10%;
+		left: 5%;
+		margin-bottom: 0;
+		width: 45%;
+		h2 {
+			color: #ffffff;
+			font: 300 38px / 22px 'Roboto';
+			font-size: (38/22) +em;
+		}
+		p {
+			color: rgba(255, 255, 255, 0.54);
+			font: 400 15px / 24px 'Roboto';
+			font-size: (15/22) + em;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.casino-top-banner {
+		figcaption {
+			width: 90%;
+		}
+	}
+}
+
+.section-casino-title {
+	padding-right: 22px;
+	padding-left: 0px;
+}
+
+.sidebar-left {
+	padding-right: 52px;
+}
+
+@media screen and (max-width: 768px) {
+	.sidebar-left {
+		text-align: center;
+		padding-right: 0px;
+	}
+}
+
+.search-form {
+	padding-bottom: 36px;
+	position: relative;
+	.fa {
+		color: $textColor;
+		position: absolute;
+		top: 12px;
+		left: 20px;
+		font-size: 15px;
+	}
+	input {
+		padding-top: 5px;
+		padding-right: 18%;
+		padding-bottom: 5px;
+		padding-left: 22%;
+		outline: none;
+		border: none;
+		border-radius: 2px;
+		box-shadow: 1px 2px 2px 0.00px rgba(58, 58, 54, 0.05);
+		color: $textColor;
+		font: 400 14px / 28px 'Roboto';
+	}
+}
+
+.sidebar-grid-list {
+	padding-bottom: 35px;
+	border-bottom: 1px solid $textColor;
+	li a {
+		color: #1d1d1d;
+		font: 400 17px / 35px 'Roboto';
+	}
+	li.active a {
+		color: $green;
+	}
+}
+
+.casinos-guide-block {
+	margin-bottom: 30px;
+	h3 {
+		color: #1d1d1d;
+		font: 400 22px / 28px 'Roboto';
+		margin-top: 0;
+	}
+	p {
+		color: $textColor;
+		font: 400 15px / 24px 'Roboto';
+		margin-bottom: 30px;
+	}
+	a {
+		color: $green;
+		font: 400 15px / 22px 'Roboto';
+		cursor: pointer;
+		&hover {
+			color: $lightgreen;
+		}
+	}
+}

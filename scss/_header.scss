@@ -1,0 +1,194 @@
+.navbar {
+	border: none;
+	border-radius: 0px;
+	margin-bottom: 0;
+}
+
+a.navbar-brand {
+	padding-top: 32px;
+	padding-right: 39px;
+	padding-bottom: 60px;
+}
+
+.navbar-toggle {
+	padding: 10px 5px;
+	position: relative;
+	right: 30px;
+	top: 15px;
+}
+
+.navigacija {
+	position: relative !important;
+}
+
+.sub-navbar {
+	background-color: $white;
+	padding-top: 10px;
+	padding-bottom: 2px;
+	text-align: left;
+	margin-bottom: 65px;
+	#sub-nav {
+		margin-left: -20px;
+	}
+	li a {
+		color: #333333;
+		font: 400 17px / 22px 'Roboto';
+	}
+	li.active a {
+		color: $green;
+	}
+	.form-group {
+		position: relative;
+		input {
+			visibility: hidden;
+			color: $textColor;
+			font: 400 13px / 26px Roboto;
+			padding-left: 15px;
+			padding-bottom: 2px;
+			padding-right: 26px;
+			padding-top: 2px;
+			margin: 0 auto;
+			border: none;
+			border-radius: 0px;
+			box-shadow: none;
+		}
+	}
+	.fa-search {
+		position: absolute;
+		color: #c9c9c9;
+		font-size: 21px;
+		top: 10px;
+		right: 7px;
+		cursor: pointer;
+	}
+}
+
+.icon-bar:before {
+	content: "";
+}
+
+.navbar-default .navbar-nav > li.active  {
+	background-color: $green;
+	
+	span.fa, span.icomoon {
+		color: #fff !important;
+	}
+        a {
+            background-color: $green;
+            &:hover {
+               background-color: $green;  
+            }
+        }
+}
+
+
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	background-color: inherit;
+}
+
+.navbar-default {
+	background-color: #090f0b;
+	text-align: center;
+	border-bottom: 2px solid $green;
+	.navbar-nav > li {
+            &:hover {
+                background-color: $green;
+                a, span {color : #fff !important;}
+            }
+		padding-bottom: 12px;
+		> a {
+			color: #ffffff;
+			font: 400 15px / 22px 'Roboto';
+			padding-top: 0;
+			padding-bottom: 12px;
+			margin-top: 0;
+			@media (max-width: 1085px) {
+				font-size: 11px;
+				padding: 0px 10px;
+				padding-bottom: 5px;
+			}
+		}
+		span.fa,
+		span.icomoon {
+			display: block;
+			color: #ffffff;
+			padding-top: 27px;
+			padding-bottom: 10px;
+			font-size: 21px;
+			color: grey;
+			@media (max-width: 1085px) {
+				font-size: 16px;
+			}
+		}
+	}
+}
+.navbar-collapse.collapse {
+	overflow: hidden !important;
+}
+
+@media (max-width: 768px) {
+	.navigacija > ul {
+		margin-top: 0;
+		margin-left: 0 !important;
+	}
+	.navbar-collapse.collapse {
+		overflow: visible !important
+	}
+	.fa,
+	.icomoon {
+		display: none !important;
+	}
+	.navbar-default .navbar-nav li a {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	a.navbar-brand {
+		padding-top: 22px;
+		padding-right: 0px;
+		padding-bottom: 60px;
+	}
+}
+
+.dropdown-menu {
+	position: fixed;
+	top: 121px;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	margin: 0 auto;
+	padding: 0;
+	min-width: 160px;
+	width: 100%;
+	border-radius: 0px;
+	box-shadow: none;
+	text-align: center;
+}
+
+.dropdown-menu > li > a {
+	padding-top: 20px;
+	padding-bottom: 22px;
+	color: #333333;
+	font: 400 17px / 22px 'Roboto';
+}
+
+.dropdown-menu li {
+	display: inline-block;
+}
+
+.dropdown-menu li.dropdown .dropdown-menu {
+	top: 210px;
+}
+
+.dropdown-menu li.dropdown {
+	background-position: 5px 9px !important;
+}
+
+.icomoon {
+	font-family: 'icomoon';
+	color: #fff;
+	font-size: inherit;
+}

@@ -1,0 +1,231 @@
+.section-post {
+	margin-bottom: 30px;
+}
+
+.post-content-area {
+	.post-published-date {
+		color: $textColor;
+		font: 400 15px / 22px 'Roboto';
+		padding-bottom: 28px;
+		a {
+			color: $green;
+		}
+	}
+	.post-title {
+		color: #1d1d1d;
+		font: 300 38px / 42px 'Roboto';
+		margin-bottom: 36px;
+		margin-top: 0;
+		padding-right: 20%;
+	}
+	>p {
+		padding-bottom: 38px;
+		margin-bottom: 0;
+	}
+	>img {
+		padding-bottom: 49px;
+	}
+}
+
+// Article Casino Widget
+
+.cas_widget_body {
+    margin-right: 40px;
+}
+.casino-horiz-widget {
+	padding-left: 39px;
+	padding-right: 20px;
+	padding-bottom: 7px;
+        margin-right: 40px;
+	width: 100%;
+	.casino-block-left {
+		float: left;
+		width: 55%;
+		img {
+			//padding-right: 19px;
+			//padding-bottom: 45px;
+			display: inline-block;
+			width: 22%;
+		}
+		.casino-block-title {
+			padding-top: 0;
+			margin-top: 0;
+			margin-bottom: 15px;
+			text-align: left;
+		}
+		.casino-horiz-widget-text {
+			width: 73%;
+			padding-right: 17px;
+		}
+		.casino-block-content {
+			text-align: left;
+			margin-bottom: 21px;
+			//padding-right: 20px;
+		}
+	}
+	.casino-block-right {
+		float: right;
+		width: 45%;
+		>span {
+			font-size: 14px;
+			width: 50%;
+			text-align: left;
+		}
+		.rating {
+			padding-right: 0;
+			width: 50%;
+			text-align: right;
+			.fa {
+				color: $salad;
+				font-size: 15px;
+			}
+		}
+		.btn {
+			font-size: 15px;
+		}
+	}
+}
+
+// Article Casino Widget End
+.sidebar-area {
+	padding-right: 0px;
+	padding-left: 41px;
+}
+@media screen and (max-width : 768px){
+	.sidebar-area {
+	padding: 10px 30px;
+	}
+}
+
+.sidebar-widget {
+	background-color: #fff;
+	box-shadow: 1px 2px 2px 0.00px rgba(58, 58, 54, 0.05);
+	margin-bottom: 39px;
+	padding-left: 22px;
+}
+
+.sidebar-list {
+	border-bottom: 1px solid $textColor;
+	padding-bottom: 31px;
+	margin-bottom: 30px;
+	.list-title {
+		font: 400 20px / 35px 'Roboto';
+		padding-bottom: 20px;
+	}
+}
+@media screen and (max-width : 768px){
+	.sidebar-list {
+	text-align: center;
+	}
+}
+
+// Sidebar Widget
+.widget-list {
+	padding-bottom: 2px;
+	padding-top: 21px;
+	padding-right: 0px;
+	margin-bottom: 0px;
+}
+
+.widget-item {
+	display: block;
+	width: 100%;
+	color: #1d1d1d;
+	font: 400 16px / 22px 'Roboto';
+	padding-bottom: 28px;
+	.sidebar-widget-left {
+		width: 80%;
+		img {
+			padding-right: 13px;
+			padding-bottom: 0px;
+		}
+		.rating {
+			font-size: 10px;
+		}
+		.fa {
+			color: $salad;
+			font-size: 10px;
+			padding-bottom: 0;
+			line-height: 10px;
+		}
+		p {
+			margin-bottom: 0;
+		}
+		p.rating-container {
+			line-height: 5px;
+		}
+		.widget-title {
+			position: relative;
+			font-size: (22/22) + em;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.widget-title:after {
+			position: absolute;
+			right: 3%;
+			bottom: 0;
+			display: block;
+			width: 76%;
+			height: 100%;
+			background-image: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, white 100%);
+			background-size: 100% auto;
+			content: "";
+			pointer-events: none;
+		}
+	}
+	.sidebar-widget-right {
+		position: relative;
+		width: 20%;
+		a {
+			color: $white;
+			font: 500 13px / 22px 'Roboto';
+			margin: 2px 0px;
+			border-radius: 2px;
+			position: relative;
+			right: 38%;
+			width: 48px;
+			padding: 3px 4px;
+		}
+	}
+}
+
+// Sidebar Widget End
+@media (min-width: 768px) and (max-width: 992px) {
+	.widget-list,
+	.sidebar-list {
+		margin-bottom: 3px;
+		padding-bottom: 3px;
+	}
+	.sidebar-list {
+		border: none;
+		text-align: center !important;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.rating {
+		width: 100% !important;
+	}
+	.span .casino-block span.pull-left {
+		width: 100%;
+	}
+	.widget-item .sidebar-widget-left {
+		width: 50%;
+	}
+	.widget-item .sidebar-widget-right {
+		width: 50%;
+		text-align: center;
+		a {
+			right: 0;
+		}
+	}
+	.btn {
+		width: 100%;
+	}
+	.casino-horiz-widget .casino-block-left img {
+		padding-bottom: 0;
+	}
+	.casino-horiz-widget .casino-block-right > span {
+		width: 100%;
+	}
+}

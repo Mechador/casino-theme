@@ -1,0 +1,343 @@
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	//	border-left: 1px solid green;
+	//	border-right: 1px solid red;
+	overflow: hidden;
+}
+
+.container-fluid {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+body {
+	background-color: #ededed;
+}
+
+.btn-group > .btn:hover {
+	z-index: auto;
+}
+
+.nav > li > a:focus {
+	background-color: inherit;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+/* colors */
+
+$salad: #89c011;
+$green: #058136;
+$white: #fff;
+$lightgreen: #0c8f40;
+$titleColor: #1d1d1d;
+$textColor: #878787;
+/* end of colors */
+/* Common section styles */
+
+.section-title {
+	display: table;
+	width: 100%;
+	border-bottom: 1px solid $textColor;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.section-title-header,
+.section-title-list {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.section-title-header {
+	color: $titleColor;
+	font-weight: 300;
+	font-size: 32px;
+	line-height: 22px;
+	margin: 10px 0px;
+	span {
+		color: silver;
+		font-size: 21px;
+		padding-left: 13px;
+		cursor: pointer;
+		display: inline;
+	}
+}
+
+.section-title-list {
+	list-style: none;
+	margin-bottom: 0px;
+	color: $green;
+	font-weight: 400;
+	font-size: 15px;
+	margin-top: 10px;
+	text-align: right;
+	li:first-child {
+		color: #878787;
+	}
+	li {
+		display: inline-block;
+		padding-left: 31px;
+		color: #090f0b;
+	}
+	li.active {
+		color: #058136;
+	}
+}
+
+.block-content {
+	font-weight: 400;
+	font-size: 15px;
+	color: $textColor;
+	line-height: 24px;
+}
+
+.casino-block {
+	background-color: $white;
+	padding-top: 30px;
+	padding-bottom: 22px;
+	padding-right: 20px;
+	padding-left: 20px;
+	box-shadow: 1px 2px 2px 0px rgba(58, 58, 54, 0.05);
+	margin-bottom: 20px;
+	overflow: hidden;
+	border: 2px solid $white;
+	h3 {
+		font-size: 20px;
+		font-weight: 400;
+		color: $titleColor;
+		margin-top: 28px;
+		margin-bottom: 10px;
+		padding-bottom: 0px;
+	}
+	.hot-triangle {
+		display: none;
+	}
+	.rating .fa {
+		color: $salad;
+		padding-bottom: 18px;
+	}
+}
+/* hot-casino-block extend class casino-block, when need change block style to green background 
+and add border triangle hot */
+
+.hot-casino-block {
+	background-color: $green;
+	box-shadow: 1px 2px 2px 0.00px rgba(58, 58, 54, 0.05);
+	border: 2px solid #5dab1d;
+	position: relative;
+	h3, .rating .fa {
+		color: $white;
+	}
+	.block-content {
+		color: rgba(255, 255, 255, 0.54);
+	}
+	.btn-reviews {
+		background-color: #0c8f40;
+	}
+	.hot-triangle {
+		display: block;
+		position: absolute;
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		background-color: $salad;
+		width: 103px;
+		height: 25px;
+		top: -14px;
+		right: -35px;
+		height: 55px;
+		span {
+			color: $white;
+			font: 500 16px / 22px 'Roboto';
+			position: relative;
+			top: 18px;
+		}
+	}
+	&:after {
+		display: block;
+		content: 'HOT';
+		position: absolute;
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		background-color: $salad;
+		width: 103px;
+		height: 25px;
+		top: -14px;
+		right: -36px;
+		height: 55px;
+		color: #fff;
+		font: 500 15px / 22px 'Roboto';
+		top: -15px;
+		padding-top: 24px;
+	}
+}
+
+.rating {
+	font-size: 21px;
+}
+
+.rating .fa {
+	color: $green;
+	padding-bottom: 26px;
+}
+
+.section-casinos {
+	margin-bottom: 41px;
+}
+/* Buttons Styles */
+
+.btn {
+	font-size: 15px;
+	font-size: 0.625em;
+	font-weight: 500;
+	border-radius: 0px;
+	color: $white;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	border: none;
+	line-height: 15px;
+}
+
+.btn-group {
+	width: 100%;
+}
+
+.btn-reviews {
+	background-color: $green;
+	width: 50%;
+	&:hover {
+		color: whitesmoke;
+		background-color: lighten($green, 2%);
+	}
+}
+
+.btn-playnow {
+	background-color: $salad;
+	width: 50%;
+	&:hover {
+		color: whitesmoke;
+		background-color: lighten($salad, 2%);
+	}
+}
+/* End of Buttons Styles */
+/* End of Common section styles */
+/* Section News Block */
+
+.news-block {
+	margin-bottom: 40px;
+	.news-date {
+		font-size: 13px;
+		font-weight: 400;
+		color: $textColor;
+	}
+	.news-block-title {
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 28px;
+		color: $titleColor;
+		padding-right: 60px;
+	}
+}
+/* Section Top Focus */
+
+.topfocus-block {
+	margin-bottom: 56px;
+	.topfocus-content-block {
+		width: 75%;
+	}
+	.topfocus-link {
+		font: 400 15px / 22px 'Roboto';
+		color: $green;
+		padding-right: 30px;
+		text-decoration: none;
+		&:hover {
+			color: $lightgreen;
+		}
+	}
+}
+
+.topfocus-block-title {
+	font: 400 22px / 28px 'Roboto';
+	margin: 0 auto;
+}
+
+.video-title {
+	margin-bottom: 39px;
+}
+
+.block-content-video {
+	margin-top: 53px;
+	margin-top: (53/22) + em;
+}
+/* End of Section Top Focus */
+/* Slider Styles */
+
+.section-carousel {
+	margin-bottom: 78px;
+}
+
+.carousel-indicators {
+	bottom: 0;
+	margin-bottom: 3px;
+}
+
+.carousel-inner > .item > img {
+	max-width: inherit;
+}
+
+.carousel-caption {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(9, 15, 11, 0.8);
+	padding-left: 45px;
+	padding-right: 20px;
+	h3 {
+		color: $white;
+		font-size: (34/22) + em;
+		line-height: 1em;
+		font-weight: 300;
+	}
+	p {
+		color: rgba(255, 255, 255, 0.54);
+		font: 400 15px / 24px 'Roboto';
+		font-size: (15/22) + em;
+		line-height: (24/22) +em;
+	}
+	.btn-slider {
+		background-color: $green;
+		color: $white;
+		line-height: 1em;
+		font-weight: 500;
+		font-size: 15px;
+		padding: 0.5em 1.81em;
+	}
+}
+
+//.carousel-caption {
+//	left: 0%;
+//	right: 0%;
+//	background-color: rgba(9, 15, 11, 0.8);
+//	padding-bottom: 0;
+//	bottom: 0;
+//}
+/* End Slider Styles */
+
+#container .mix{
+	display: none;
+}
+
+.filter:hover {
+    cursor: pointer;
+}

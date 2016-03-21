@@ -1,0 +1,165 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-pa1awz');
+	src:url('../fonts/icomoon.eot?#iefix-pa1awz') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-pa1awz') format('woff'),
+		url('../fonts/icomoon.ttf?-pa1awz') format('truetype'),
+		url('../fonts/icomoon.svg?-pa1awz#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-seven:before {
+	content: "\e600";
+}
+
+.icon-3x-seven:before {
+	content: "\e601";
+}
+
+.icon-ace:before {
+	content: "\e602";
+}
+
+.icon-apple:before {
+	content: "\e603";
+}
+
+.icon-bar:before {
+	content: "\e604";
+}
+
+.icon-bell:before {
+	content: "\e605";
+}
+
+.icon-bowling:before {
+	content: "\e606";
+}
+
+.icon-cards:before {
+	content: "\e607";
+}
+
+.icon-cash:before {
+	content: "\e608";
+}
+
+.icon-cherries:before {
+	content: "\e609";
+}
+
+.icon-chip:before {
+	content: "\e60a";
+}
+
+.icon-creditcard .path1:before {
+	content: "\e60b";
+	color: rgb(255, 255, 255);
+}
+.icon-creditcard .path2:before {
+	content: "\e60c";
+	margin-left: -1em;
+	color: rgb(0, 0, 0);
+}
+
+.icon-diamond:before {
+	content: "\e60d";
+}
+
+.icon-diamonds:before {
+	content: "\e60e";
+}
+
+.icon-dices:before {
+	content: "\e60f";
+}
+
+.icon-domino:before {
+	content: "\e610";
+}
+
+.icon-drink:before {
+	content: "\e611";
+}
+
+.icon-eightball:before {
+	content: "\e612";
+}
+
+.icon-grapes:before {
+	content: "\e613";
+}
+
+.icon-hand:before {
+	content: "\e614";
+}
+
+.icon-heart:before {
+	content: "\e615";
+}
+
+.icon-luckyclover:before {
+	content: "\e616";
+}
+
+.icon-lemon:before {
+	content: "\e617";
+}
+
+.icon-luck:before {
+	content: "\e618";
+}
+
+.icon-moneybag:before {
+	content: "\e619";
+}
+
+.icon-question:before {
+	content: "\e61a";
+}
+
+.icon-roulette:before {
+	content: "\e61b";
+}
+
+.icon-spades:before {
+	content: "\e61c";
+}
+
+.icon-stars:before {
+	content: "\e61d";
+}
+
+.icon-wallet:before {
+	content: "\e61e";
+}
+
+.icon-watermelon:before {
+	content: "\e61f";
+}
+
+.icon-win:before {
+	content: "\e620";
+}
+
+.icon-winner:before {
+	content: "\e621";
+}
+
